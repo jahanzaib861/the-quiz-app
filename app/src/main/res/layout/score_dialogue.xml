@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/score_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Congrats you have passed"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:trackColor="@color/gray"
+            android:id="@+id/score_progress_indicator"
+            android:progress="60"
+            app:trackCornerRadius="20dp"
+            app:trackThickness="8dp"
+            app:indicatorSize="90dp"/>
+        
+        <TextView
+            android:id="@+id/score_progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50%"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/score_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6 out of 10 questions are correct"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/finish_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="finish"
+        android:layout_margin="8dp"/>
+        
+</androidx.appcompat.widget.LinearLayoutCompat>
